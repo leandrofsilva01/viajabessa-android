@@ -1,9 +1,11 @@
-package br.com.leandro.viajabessaandroid;
+package br.com.leandro.viajabessaandroid.activity;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import br.com.leandro.viajabessaandroid.R;
 
 
 public class MainActivity extends ActionBarActivity {
