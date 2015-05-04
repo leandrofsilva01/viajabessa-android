@@ -1,10 +1,12 @@
 package br.com.leandro.viajabessaandroid.model;
 
+import java.io.Serializable;
+
 /**
  * Created by leandro on 5/3/15.
  */
 
-public class Promotion
+public class Promotion implements Serializable
 {
 
     private int id;

@@ -14,6 +14,7 @@ import java.util.List;
 
 import br.com.leandro.viajabessaandroid.R;
 import br.com.leandro.viajabessaandroid.model.Promotion;
+import br.com.leandro.viajabessaandroid.util.StringUtil;
 
 /**
  * Created by leandro on 5/3/15.
@@ -59,7 +60,7 @@ public class PromotionAdapter extends BaseAdapter
         UrlImageViewHelper.setUrlDrawable(imageView, promotion.getImageurl());
 
         TextView txtTitle = (TextView) rowView.findViewById(R.id.txtTitle);
-        txtTitle.setText(promotion.getTitle());
+        txtTitle.setText(StringUtil.replacePlus(promotion.getTitle()));
 
         TextView txtValue = (TextView) rowView.findViewById(R.id.txtValue);
         txtValue.setText("$" + promotion.getValue());
